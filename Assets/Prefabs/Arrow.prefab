@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 530811624678015038}
   - component: {fileID: 7977738861923385484}
   - component: {fileID: 8566759199389484488}
-  - component: {fileID: 3602467110159052755}
   m_Layer: 0
   m_Name: Tip
   m_TagString: Untagged
@@ -84,29 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3602467110159052755
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2218418476644024480}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &2687276355991303162
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,6 +95,7 @@ GameObject:
   - component: {fileID: 6244431841050971762}
   - component: {fileID: 989198373682272275}
   - component: {fileID: 5955295402496014709}
+  - component: {fileID: 5370019617762793447}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -200,7 +177,28 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!65 &5370019617762793447
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2687276355991303162}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3611892, y: 0.3632197, z: 2.7089162}
+  m_Center: {x: 0.0010859717, y: 0.0021029138, z: 0.0050107636}
 --- !u!1 &4839053620724976412
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +210,6 @@ GameObject:
   - component: {fileID: 6339197956739468809}
   - component: {fileID: 8764385234006492268}
   - component: {fileID: 6814254195811021579}
-  - component: {fileID: 2133212078478890862}
   m_Layer: 0
   m_Name: Shaft
   m_TagString: Untagged
@@ -285,24 +282,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2133212078478890862
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4839053620724976412}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
